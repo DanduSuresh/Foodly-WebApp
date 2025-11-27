@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@charset "UTF-8";
+
+/* GLOBAL */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins", sans-serif;
+}
+
+body{
+    background:#fafafa;
+}
+
+/* NAVBAR (same as home & restaurants) */
+.main-nav{
+    width:100%;
+    background:#ff5722;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+.nav-center ul{
+    list-style:none;
+    display:flex;
+    gap:25px;
+}
+
+.nav-center ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-btn{
+    padding:8px 16px;
+    background:white;
+    color:#ff5722 !important;
+    border-radius:6px;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.nav-btn:hover{
+    background:#ffe0d5;
+}
+
+.signup-btn{
+    border:2px solid white;
+    background:transparent;
+    color:white !important;
+}
+
+.signup-btn:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+/* PAGE HEADINGS */
+.title{
+    text-align:center;
+    font-size:32px;
+    margin-top:40px;
+    color:#ff5722;
+    font-weight:700;
+}
+
+.subtitle{
+    text-align:center;
+    color:#555;
+    margin-bottom:30px;
+    font-size:16px;
+}
+
+/* HELP CARDS */
+.help-container{
+    width:90%;
+    margin:auto;
+    margin-top:10px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+    gap:25px;
+}
+
+.help-card{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+    cursor:pointer;
+}
+
+.help-card:hover{
+    transform:translateY(-6px);
+}
+
+.help-card h3{
+    color:#ff5722;
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.help-card p{
+    color:#555;
+    font-size:15px;
+}
+
+/* CONTACT BOX */
+.contact-box{
+    width:90%;
+    background:white;
+    margin:40px auto;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+}
+
+.contact-box h3{
+    color:#ff5722;
+    font-size:22px;
+}
+
+.contact-box p{
+    margin-top:8px;
+    color:#555;
+}
+
+/* FOOTER */
+footer{
+    margin-top:40px;
+    padding:25px;
+    text-align:center;
+    background:#333;
+    color:white;
+}
+
+/* RESPONSIVE */
+@media(max-width:850px){
+    .nav-center ul{
+        display:none;
+    }
+}
